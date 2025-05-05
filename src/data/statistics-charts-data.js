@@ -107,9 +107,9 @@ const completedTasksChart = {
 export const statisticsChartsData = [
   {
     color: "white",
-    title: "Website View",
-    description: "Last Campaign Performance",
-    footer: "campaign sent 2 days ago",
+    title: "Fear and greed",
+    description: "Chart showing the fear and greed index",
+    footer: "updated 4 min ago",
     chart: websiteViewsChart,
   },
   {

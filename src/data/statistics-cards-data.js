@@ -9,11 +9,11 @@ export const statisticsCardsData = [
   {
     color: "gray",
     icon: BanknotesIcon,
-    title: "Today's Money",
-    value: "$53k",
+    title: "Fear and greed",
+    value: "55",
     footer: {
       color: "text-green-500",
-      value: "+55%",
+      value: "+5%",
       label: "than last week",
     },
   },
