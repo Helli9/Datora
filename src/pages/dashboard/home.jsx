@@ -8,14 +8,9 @@ import {
 
 import { StatisticsCard } from "@/widgets/cards";
 import { StatisticsChart } from "@/widgets/charts";
-
-import {
-  statisticsCardsData,
-  statisticsChartsData,
-  riskChartData,
-} from "@/data";
+import { useEffect, useState } from "react";
+import {statisticsCardsData, statisticsChartsData,} from "@/data";
 import { CheckCircleIcon, ClockIcon } from "@heroicons/react/24/solid";
-
 import {
   LineChart,
   Line,
@@ -26,17 +21,26 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 
-const fearGreedData = [
-  { day: 'Mon', index: 40 },
-  { day: 'Tue', index: 45 },
-  { day: 'Wed', index: 60 },
-  { day: 'Thu', index: 70 },
-  { day: 'Fri', index: 55 },
-  { day: 'Sat', index: 65 },
-  { day: 'Sun', index: 75 },
-];
 
 export function Home() {
+  const [fearGreedData, setFearGreedData] = useState([]);
+
+  useEffect(() => {
+    fetch('https://api.alternative.me/fng/')
+    .then((res) => res.json())
+    .then((data) => {
+      const formatted = data.data
+        .reverse() // reverse to show oldest to newest
+        .map((item) => ({
+          day: new Date(item.timestamp * 1000).toLocaleDateString("en-US", {
+            weekday: "short",
+          }),
+          index: parseInt(item.value),
+        }));
+      setFearGreedData(formatted);
+    })
+    .catch((err) => console.error("Failed to fetch Fear & Greed Index:", err));
+  }, []);
   return (
     <div className="mt-12">
       <div className="mb-12 grid gap-y-10 gap-x-6 md:grid-cols-2 xl:grid-cols-4">
