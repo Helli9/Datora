@@ -8,30 +8,28 @@ import {
 export const statisticsCardsData = [
   {
     color: "gray",
-    icon: BanknotesIcon,
+    icon: ChartBarIcon,
     title: "Fear and greed",
-    value: "55",
+    value: "73",
     footer: {
       color: "text-green-500",
-      value: "+5%",
-      label: "than last week",
+      value: "Greed",
     },
   },
   {
     color: "gray",
-    icon: UsersIcon,
-    title: "Today's Users",
-    value: "2,300",
+    icon: ChartBarIcon, 
+    title: "Bitcoin: NUPL",
+    value: "56.35%",
     footer: {
       color: "text-green-500",
-      value: "+3%",
-      label: "than last month",
+      value: "Belief/ Denial",
     },
   },
   {
     color: "gray",
     icon: UserPlusIcon,
-    title: "New Clients",
+    title: "",
     value: "3,462",
     footer: {
       color: "text-red-500",

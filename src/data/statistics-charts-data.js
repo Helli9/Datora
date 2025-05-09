@@ -31,7 +31,7 @@ const dailySalesChart = {
   series: [
     {
       name: "Sales",
-      data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
+      data: [52.83, 52.78, 53.79, 53.93, 53.45, 52.66, 52.78, 53.74, 56.35],
     },
   ],
   options: {
@@ -45,17 +45,7 @@ const dailySalesChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: [
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      
     },
   },
 };
@@ -99,7 +89,7 @@ const completedTasksChart = {
   series: [
     {
       name: "Tasks",
-      data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+      data: [52.83, 52.78, 53.79, 53.93, 53.45, 52.66, 52.78, 53.74, 56.35],
     },
   ],
 };
@@ -114,8 +104,8 @@ export const statisticsChartsData = [
   },
   {
     color: "white",
-    title: "Daily Sales",
-    description: "15% increase in today sales",
+    title: "Bitcoin: NUPL",
+    description: "Net Unrealized Profit/Loss",
     footer: "updated 4 min ago",
     chart: dailySalesChart,
   },
