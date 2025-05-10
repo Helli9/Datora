@@ -1,30 +1,5 @@
 import { chartsConfig } from "@/configs";
 
-const websiteViewsChart = {
-  type: "bar",
-  height: 220,
-  series: [
-    {
-      name: "Views",
-      data: [50, 20, 10, 22, 50, 10, 40],
-    },
-  ],
-  options: {
-    ...chartsConfig,
-    colors: "#388e3c",
-    plotOptions: {
-      bar: {
-        columnWidth: "16%",
-        borderRadius: 5,
-      },
-    },
-    xaxis: {
-      ...chartsConfig.xaxis,
-      categories: ["M", "T", "W", "T", "F", "S", "S"],
-    },
-  },
-};
-
 const dailySalesChart = {
   type: "line",
   height: 220,
@@ -45,7 +20,17 @@ const dailySalesChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      
+      categories: [
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
     },
   },
 };
@@ -84,6 +69,7 @@ const completedTaskChart = {
     },
   },
 };
+
 const completedTasksChart = {
   ...completedTaskChart,
   series: [
@@ -94,13 +80,14 @@ const completedTasksChart = {
   ],
 };
 
+
 export const statisticsChartsData = [
   {
     color: "white",
     title: "Fear and greed",
     description: "Chart showing the fear and greed index",
     footer: "updated 4 min ago",
-    chart: websiteViewsChart,
+    chart: dailySalesChart,
   },
   {
     color: "white",
