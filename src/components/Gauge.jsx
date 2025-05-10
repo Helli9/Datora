@@ -19,7 +19,7 @@ const Gauge = ({ value }) => {
 
   return (
     <div
-      className="flex flex-col items-center bg-gray-700 p-6 rounded-xl shadow-md w-[220px]"
+      className="flex flex-col items-center bg-gray-700 p-6 rounded-xl shadow-md w-[270px]"
       role="meter"
       aria-valuenow={clampedValue}
       aria-valuemin="0"
