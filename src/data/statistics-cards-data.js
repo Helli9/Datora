@@ -1,6 +1,4 @@
 import {
-
-  UserPlusIcon,
   ChartBarIcon,
 } from "@heroicons/react/24/solid";
 
@@ -25,17 +23,7 @@ export const statisticsCardsData = [
       value: "Belief/ Denial",
     },
   },
-  {
-    color: "gray",
-    icon: UserPlusIcon,
-    title: "",
-    value: "3,462",
-    footer: {
-      color: "text-red-500",
-      value: "-2%",
-      label: "than yesterday",
-    },
-  },
+
   {
     color: "gray",
     icon: ChartBarIcon,
