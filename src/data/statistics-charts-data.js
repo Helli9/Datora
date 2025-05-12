@@ -5,8 +5,8 @@ const dailySalesChart = {
   height: 220,
   series: [
     {
-      name: "Sales",
-      data: [52.83, 52.78, 53.79, 53.93, 53.45, 52.66, 52.78, 53.74, 56.35],
+      name: "PUELL",
+      data: [50.5, 54.5, 54.5, 63.5, 56, 53.5, 55.5, 58, 51.5, 53, 47, 49.5, 64.5, 47.5, 59, 61, 56, 56.5, 59.5, 61, 55, 57.5, 68, 69.5, 58, 73, 64.5, 72, 63, 68.5],
     },
   ],
   options: {
@@ -20,17 +20,7 @@ const dailySalesChart = {
     },
     xaxis: {
       ...chartsConfig.xaxis,
-      categories: [
-        "Apr",
-        "May",
-        "Jun",
-        "Jul",
-        "Aug",
-        "Sep",
-        "Oct",
-        "Nov",
-        "Dec",
-      ],
+      categories: [4/10, 4/11, 4/12, 4/13, 4/14, 4/15, 4/16, 4/17, 4/18, 4/19, 4/20, 4/21, 4/22, 4/23, 4/24, 4/25, 4/26, 4/27, 4/28, 4/29],
     },
   },
 };
@@ -84,9 +74,9 @@ const completedTasksChart = {
 export const statisticsChartsData = [
   {
     color: "white",
-    title: "Fear and greed",
-    description: "Chart showing the fear and greed index",
-    footer: "updated 4 min ago",
+    title: "The Puell Multiple",
+    description: "Chart showing the The Puell Multiple",
+    footer: "Latest 68.5",
     chart: dailySalesChart,
   },
   {
@@ -94,7 +84,7 @@ export const statisticsChartsData = [
     title: "Bitcoin: NUPL",
     description: "Net Unrealized Profit/Loss",
     footer: "updated 4 min ago",
-    chart: dailySalesChart,
+    chart: completedTasksChart ,
   },
   {
     color: "white",
