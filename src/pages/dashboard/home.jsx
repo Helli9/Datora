@@ -47,7 +47,7 @@ export function Home() {
       
       <div className="mb-12 grid gap-y-10 gap-x-6  md:grid-cols-2 xl:grid-cols-4">
         {fearGreedData.length > 0 && (
-          <div className="mt-2 flex justify-center">
+          <div className="flex justify-center">
             <Gauge value={fearGreedData[fearGreedData.length - 1].index} />
           </div>
         )}
