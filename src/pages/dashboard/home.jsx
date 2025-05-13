@@ -27,7 +27,7 @@ export function Home() {
   const [fearGreedData, setFearGreedData] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.alternative.me/fng/?limit=30')
+    fetch('https://api.alternative.me/fng/?limit=30&format=json&date_format=uk')
     .then((res) => res.json())
     .then((data) => {
       const formatted = data.data
