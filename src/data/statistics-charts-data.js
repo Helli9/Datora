@@ -235,6 +235,20 @@ export const statisticsChartsData = [
     footer: "latest 50.7",
     chart: MVRV,
   },
+  {
+    color: "white",
+    title: "PI Cycle Top",
+    description: "Chart showing the PI Cycle Top",
+    footer: "Latest 57.8",
+    chart: PI ,
+  },
+  {
+    color: "white",
+    title: "Z-Score",
+    description: "Bitcoin: MVRV Z-Score",
+    footer: "latest 50.7",
+    chart: MVRV,
+  },
 ];
 
 export default statisticsChartsData;

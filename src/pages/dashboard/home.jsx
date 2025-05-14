@@ -120,7 +120,7 @@ export function Home() {
         </ResponsiveContainer>
       </CardBody>
       </Card>
-      </div>
+      </div> 
     </div>
   );
 }
